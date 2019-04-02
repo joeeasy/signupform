@@ -1,0 +1,144 @@
+
+#signUpModal * {
+  font-family: 'Oxygen', sans-serif;
+}
+.modal-dialog {
+  max-width: 40%;
+  margin: 1.75rem auto;
+}
+@media (max-width: 1024px) {
+  .modal-dialog {
+      max-width: 60%;
+      margin: 1.75rem auto;
+  }
+}
+.modal-content {
+  border: none;
+}
+.brand__img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand__img > img {
+  height: 100px;
+}
+.list-style {
+  list-style: none;
+  color: #ffffff;
+  font-size: 24px;
+}
+.signup__content {
+  background-image: url("./img/pexels-photo-247676.jpeg");
+  background-size: cover;
+  height: 100%;
+}
+.signup__divider--text {
+  color: #a4a2a2;
+  font-style: italic;
+}
+
+.signup__divider {
+  margin-top: 10px;
+  border: .5px solid lightgray;
+}
+
+.text-white {
+  color: white;
+}
+.signup__row {
+  margin: 0;
+}
+.signup__row > .col-7,
+.signup__row > .col-5
+ {
+  padding: 0;
+}
+.signup__form {
+  padding: 32px  16px 0 16px;
+}
+.signup--facebook,
+.signupform .form-control,
+.btn-submit {
+  outline: none;
+  border-radius: 0;
+  height: 56px;
+  width: 100%;;
+  margin-bottom: 16px;
+}
+.signupform .form-control {
+  border: 1px solid lightgrey;
+  color: lightgray;
+}
+
+.signup--facebook,
+.signup--facebook:hover {
+  border: none;
+  padding: 16px 32px;
+  background: #3b569a;
+}
+
+
+.margin--right16 {
+  margin-right: 16px;
+}
+.signupform__heading {
+  margin-top: 10px;
+  font-size: 24px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.terms {
+  color: #a09c9c;
+}
+
+.signup__row .modal-footer {
+  justify-content: center;
+}
+.signup__row .modal-footer > h4 {
+  font-size: 16px;
+}
+.signup__social  .close {
+  position: absolute;
+  top: 16px;
+  right: 4%;
+}
+@media (max-width: 960px) {
+  .modal-dialog {
+    max-width: 60%;
+    margin: 1.75rem auto;
+  }
+  .signup__social  .close {
+    position: absolute;
+    top: 6px;
+    right: 4%;
+  }
+}
+@media (max-width: 768px) {
+ 
+  .modal-dialog {
+    max-width: 95%;
+    margin: 1.75rem auto;
+  }
+
+  .signup--facebook {
+    padding: 8px 16px;
+  }
+   
+}
+
+@media (max-width: 425px) {
+  .signup__row {
+    display: block;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .signup__row > .col-7 {
+    display: none;
+  }
+  .signup__row > .col-5 {
+    max-width: 100%;
+  }
+}

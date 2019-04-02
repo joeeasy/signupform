@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="./modal.css" rel="stylesheet" />
+  <title>Bootstrap modal</title>
+</head>
+<body>
+  <div class="text-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal">
+          Launch demo modal
+      </button>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade bd-example-modal-lg show" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="row signup__row">
+          <div class="col-5">
+            <div class="signup__content">
+              <div class="brand__img text-center">
+                <!-- Your brand logo will be here -->
+                <img src="./img/header-logo-dark.png" alt="">
+              </div>
+              <!-- <h3 class="text-center text-white font-24">Sign up with Editorial Footage </h3> -->
+              <!-- <ul class="list-style">
+                  <li><i class="fas fa-caret-right"></i> <Strong>Stay in the  loop</Strong> on offers and news</li>
+                  <li><i class="fas fa-caret-right"></i> <Strong>Download</Strong> preview comps before you buy</li>
+                  <li><i class="fas fa-caret-right"></i> <Strong>Organize</Strong> your creativity using your collection tool</li>
+                  <li><i class="fas fa-caret-right"></i> <Strong>share and earn</Strong> by taking advantage of our refer a friend program</li>
+                  <li><i class="fas fa-caret-right"></i> <Strong>Try </Strong> our free adobe premiere addon</li>
+                </ul> -->
+            </div>
+          </div>
+          <div class="col-7">
+
+            <div class="signup__form">
+              <div class="signup__social">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                <button class="btn btn-primary signup--facebook"><i class="fab fa-facebook fax2 margin--right16"></i> <span>JOIN USING FACEBOOK</span></button>
+              </div>
+              <div class="row ">
+                <div class="col-5"><hr class="signup__divider" /></div>
+                <div class="col-2 signup__divider--text">or</div>
+                <div class="col-5"><hr class="signup__divider"/></div>
+              </div>
+              <div class="form__container">
+                <div class="signupform__heading text-center">
+                  <h4>Sign Up</h4>
+                </div>
+                <form action="#" method="post" class="signupform">
+                  <div class="form-group">
+                    <label for="" >Email</label>
+                    <input type="email"
+                      class="form-control" name="email" id="" aria-describedby="helpId" placeholder="Your email address">
+                  </div>
+                  <div class="form-group">
+                    <label for="" >Username</label>
+                    <input type="text"
+                      class="form-control" name="username" id="" aria-describedby="helpId" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <label for="" >Password</label>
+                    <input type="password"
+                      class="form-control" name="password" id="" aria-describedby="helpId" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="" >Confirm password</label>
+                    <input type="password"
+                      class="form-control" name="confirmpass" id="" aria-describedby="helpId" placeholder="confirm password">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-submit">Sign Up</button>
+                    <p class="terms">By creating an account or username, you accept our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <h4 class="text-center">Already have an account? <a href="#">Login</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
